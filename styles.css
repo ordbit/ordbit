@@ -42,7 +42,7 @@
 }
 .mainbar .logo-container i {
   margin-right: 5px;
-  color: #2980b9;
+  color: #f1c40f;
 }
 .mainbar .logo-container p {
   font-weight: 700;
@@ -68,16 +68,22 @@
   cursor: pointer;
 }
 
+@keyframes cloudmovement {
+  from {
+    right: -300px;
+  }
+  to {
+    right: calc(100vw + 300px);
+  }
+}
 .welcome-section {
   position: relative;
   top: 50px;
   width: 100vw;
-  height: 500px;
-  background: #34495e;
-}
-.welcome-section #particles-js {
-  width: 100%;
-  height: 100%;
+  height: 90vh;
+  background: #2980b9;
+  background: linear-gradient(180deg, #2980b9 29%, #3498db 73%);
+  overflow-x: hidden;
 }
 .welcome-section .statement {
   position: absolute;
@@ -85,12 +91,15 @@
   left: 25px;
   font-size: 2em;
   color: white;
+  z-index: 10;
 }
 .welcome-section .skill-container {
   display: flex;
   position: absolute;
   top: 250px;
   left: 25px;
+  z-index: 10;
+  display: none;
 }
 .welcome-section .skill-container .skill {
   padding: 5px 10px;
@@ -99,6 +108,126 @@
   font-size: 0.8em;
   color: white;
   margin-right: 5px;
+}
+.welcome-section img {
+  position: absolute;
+  bottom: 0;
+  width: 50vw;
+}
+.welcome-section .highrise-front {
+  z-index: 3;
+}
+.welcome-section .highrise-middle {
+  z-index: 2;
+  transform: translateX(-100px);
+}
+.welcome-section .highrise-back {
+  z-index: 1;
+}
+.welcome-section .right {
+  right: 0;
+}
+.welcome-section .cloud1 {
+  height: 170px;
+  width: 250px;
+  position: absolute;
+  top: 40%;
+  animation-name: cloudmovement;
+  animation-duration: 18s;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@media screen and (max-width: 700px) {
+  .welcome-section .cloud1 {
+    top: 65%;
+    transform: scale(0.5);
+  }
+}
+.welcome-section .cloud1 .circle1 {
+  width: 90px;
+  height: 90px;
+  border-radius: 75px;
+  background-color: white;
+  position: absolute;
+}
+.welcome-section .cloud1 .circle2 {
+  width: 90px;
+  height: 90px;
+  border-radius: 75px;
+  background-color: white;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+.welcome-section .cloud1 .circle3 {
+  width: 110px;
+  height: 110px;
+  border-radius: 75px;
+  background-color: white;
+  position: absolute;
+  top: 30px;
+  left: -35px;
+}
+.welcome-section .cloud1 .circle4 {
+  width: 80px;
+  height: 80px;
+  border-radius: 75px;
+  background-color: white;
+  position: absolute;
+  top: 30px;
+  left: -75px;
+}
+.welcome-section .cloud2 {
+  height: 150px;
+  width: 20px;
+  position: absolute;
+  top: 45%;
+  animation-name: cloudmovement;
+  animation-duration: 23s;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+}
+@media screen and (max-width: 700px) {
+  .welcome-section .cloud2 {
+    top: 55%;
+    transform: scale(0.5);
+  }
+}
+.welcome-section .cloud2 .circle1 {
+  width: 70px;
+  height: 70px;
+  border-radius: 75px;
+  background-color: white;
+  position: absolute;
+}
+.welcome-section .cloud2 .circle2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 75px;
+  background-color: white;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.welcome-section .cloud2 .circle3 {
+  width: 105px;
+  height: 105px;
+  border-radius: 75px;
+  background-color: white;
+  position: absolute;
+  top: 30px;
+  left: -35px;
+}
+.welcome-section .cloud2 .circle4 {
+  width: 80px;
+  height: 80px;
+  border-radius: 75px;
+  background-color: white;
+  position: absolute;
+  top: 30px;
+  left: -75px;
 }
 
 /*# sourceMappingURL=styles.css.map */
