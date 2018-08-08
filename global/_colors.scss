@@ -12,3 +12,27 @@ $white: #ecf0f1;
 $red: #e74c3c;
 $section-divider: rgba(189, 195, 199,0.5);
 $silvergrey: #ecf0f1;
+$yellow: #f1c40f;
+$purple: #8e44ad;
+
+//COLOR CODED ELEMENTS
+
+.strategy {
+    background: $blue !important;
+}
+
+.video {
+    background: $green !important;
+}
+
+.text {
+    background: $yellow !important;
+}
+
+.design {
+    background: $red !important;
+}
+
+.code {
+    background: $purple !important;
+}

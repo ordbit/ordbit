@@ -1,3 +1,23 @@
+.strategy {
+  background: #2980b9 !important;
+}
+
+.video {
+  background: #16a085 !important;
+}
+
+.text {
+  background: #f1c40f !important;
+}
+
+.design {
+  background: #e74c3c !important;
+}
+
+.code {
+  background: #8e44ad !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -46,6 +66,39 @@
 .mainbar .menu-items li:hover {
   background: #34495e;
   cursor: pointer;
+}
+
+.welcome-section {
+  position: relative;
+  top: 50px;
+  width: 100vw;
+  height: 500px;
+  background: #34495e;
+}
+.welcome-section #particles-js {
+  width: 100%;
+  height: 100%;
+}
+.welcome-section .statement {
+  position: absolute;
+  top: 150px;
+  left: 25px;
+  font-size: 2em;
+  color: white;
+}
+.welcome-section .skill-container {
+  display: flex;
+  position: absolute;
+  top: 250px;
+  left: 25px;
+}
+.welcome-section .skill-container .skill {
+  padding: 5px 10px;
+  background: #2980b9;
+  border-radius: 5px;
+  font-size: 0.8em;
+  color: white;
+  margin-right: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
