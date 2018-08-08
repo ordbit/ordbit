@@ -1,0 +1,40 @@
+.mainbar {
+    background: $darkblue;
+    height: 50px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    .logo-container {
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        i {
+            margin-right: 5px;
+            color: $blue;
+        }
+        p {
+            font-weight: 700;
+            font-size: 1.4em;
+            transform: translateY(-8px);
+            color: white;
+        }
+    }
+    .menu-items {
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        li {
+            margin-right: 10px;
+            color: white;
+            padding: 10px;
+            &:hover {
+                background: $lighterdarkblue;
+                cursor: pointer;
+            }
+        }
+    }
+}
