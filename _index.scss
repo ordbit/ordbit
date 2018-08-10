@@ -6,6 +6,13 @@
     background: rgb(41,128,185);
     background: linear-gradient(180deg, rgba(41,128,185,1) 29%, rgba(52,152,219,1) 73%);
     overflow: hidden;
+    .pre-statement {
+        position: absolute;
+        top: 100px;
+        left: 45px;
+        color: white;
+        animation-delay: 1.2s;
+    }
     .statement {
         position: absolute;
         top: 130px;
@@ -226,4 +233,11 @@
     height: 400px;
     width: 100vw;
     background: $lighterdarkblue;
+    p {
+        color: white;
+        position: absolute;
+        top: 50px;
+        left: 45px;
+        width: 30vw;
+    }
 }
