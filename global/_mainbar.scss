@@ -1,24 +1,25 @@
 .mainbar {
-    background: $darkblue;
-    height: 50px;
-    width: 100vw;
-    position: fixed;
-    top: 0;
+    background: transparent;
+    width: 100%;
+    max-width: 1400px;
+    top: 15px;
     z-index: 1000;
+    position: absolute;
     .logo-container {
         display: flex;
         position: absolute;
         top: 15px;
-        left: 15px;
+        left: 10%;
         i {
-            margin-right: 5px;
-            color: $yellow;
+            margin-right: 1px;
+            color: $red;
+            font-size: 1.2em;
         }
         p {
             font-weight: 700;
-            font-size: 1.4em;
-            transform: translateY(-8px);
+            font-size: 1.7em;
             color: white;
+            color: $darkblue;
         }
     }
     .menu-items {
@@ -32,8 +33,10 @@
             margin-right: 10px;
             color: white;
             padding: 10px;
+            color: $darkblue;
+            font-weight: 700;
             &:hover {
-                background: $lighterdarkblue;
+                color: $red;
                 cursor: pointer;
             }
         }
