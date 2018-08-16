@@ -12,14 +12,13 @@
         left: 10%;
         i {
             margin-right: 1px;
-            color: $red;
+            color: $green;
             font-size: 1.2em;
         }
         p {
             font-weight: 700;
             font-size: 1.7em;
             color: white;
-            color: $darkblue;
         }
     }
     .menu-items {
@@ -28,15 +27,15 @@
         list-style: none;
         position: absolute;
         top: 5px;
-        right: 15px;
+        right: 10%;
         li {
             margin-right: 10px;
             color: white;
             padding: 10px;
-            color: $darkblue;
+            color: white;
             font-weight: 700;
             &:hover {
-                color: $red;
+                text-decoration: underline;
                 cursor: pointer;
             }
         }
